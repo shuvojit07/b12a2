@@ -1,0 +1,68 @@
+/* google font */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* sheard style */
+
+.body {
+  background-color: rgb(245, 248, 255);
+}
+.header {
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.manu-bar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.manu-bar-ul-li {
+  text-decoration: none;
+  color: #8987a1;
+}
+.manu-bar-ul {
+  display: flex;
+  gap: 15px;
+}
+/* header-banner */
+.header-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.banner-title {
+  font-family: Noto Serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 89px;
+}
+.banner-headding-deatial {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+.fresh-flower {
+  color: #e95a08;
+}
+
+@media only screen and (max-width: 576px) {
+  .manu-bar-ul {
+    display: none;
+  }
+  .header-banner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-img {
+    order: -1;
+  }
+}
