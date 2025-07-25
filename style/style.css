@@ -5,9 +5,13 @@
 /* sheard style */
 
 .body {
+  /* max-width: 100%;
+  width: 100%; */
   background-color: rgb(211, 219, 239);
 }
 .header {
+  /* max-width: 100%;
+  width: 100%; */
   padding: 0 100px;
   margin-bottom: 60px;
 }
@@ -50,6 +54,9 @@
   line-height: 27px;
   letter-spacing: 0%;
 }
+.banner-img-1 {
+  max-width: 100%;
+}
 .fresh-flower {
   color: #e95a08;
 }
@@ -60,8 +67,8 @@
 }
 .our-plants-heading {
   text-align: center;
-  width: 800px;
-  margin-left: 170px;
+  width: 100%;
+  /* margin-left: 170px; */
 }
 .our-plants-title {
   font-family: Noto Serif;
@@ -319,9 +326,13 @@
   text-align: left;
 }
 @media only screen and (max-width: 576px) {
+  .body {
+    max-width: 100%;
+    padding: 0;
+  }
   .header {
     padding: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   .manu-bar-ul {
     display: none;
@@ -359,10 +370,16 @@
     grid-template-columns: repeat(1, 1fr);
     margin-top: 5px;
     padding: 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .trusted-badge {
     visibility: hidden;
+  }
+  .email {
+    width: 404px;
+    height: 50px;
   }
   /* deal */
   .latest-deal-img {
